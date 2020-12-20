@@ -1,15 +1,16 @@
 import React from 'react';
 //iMPORT Component
 import Todo from './Todo';
-const TodoList = ({todos, setTodos}) => {
+const TodoList = ({todos, setTodos, filteredTodos}) => {
     console.log(todos);
     return (
     <div className="todo-container">
         <ul className="todo-list">
-            {todos.map(todo => (
+            {filteredTodos.map(todo => (
                 <Todo 
                 setTodos={setTodos} 
-                todos={todos} key={todo.id} 
+                todos={todos} 
+                key={todo.id} 
                 todo={todo}
                 text={todo.text} />
             ))}
