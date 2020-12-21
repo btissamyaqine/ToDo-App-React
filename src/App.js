@@ -4,7 +4,6 @@ import './App.css';
 import Form from './components/Form';
 import TodoList from './components/TodoList';
 function App() {
- 
   //state stuff
   const [inputText, setInputText] = useState("");
   const [todos, setTodos] = useState([]);
@@ -15,7 +14,7 @@ function App() {
    useEffect(() => {
     filterHandler();
   },
-  [todos]);
+  [todos, status]);
   //functions 
   const filterHandler = () => {
     switch(status){

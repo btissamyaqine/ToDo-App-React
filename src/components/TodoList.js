@@ -2,7 +2,7 @@ import React from 'react';
 //iMPORT Component
 import Todo from './Todo';
 const TodoList = ({todos, setTodos, filteredTodos}) => {
-    console.log(todos);
+    // console.log(todos);
     return (
     <div className="todo-container">
         <ul className="todo-list">

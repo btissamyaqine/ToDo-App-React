@@ -87,9 +87,9 @@ form button:hover{
   transform: translate(10rem) rotate(20deg);
   opacity: 0;
 }
-.complated{
+.completed{
   text-decoration: line-through;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 /* custom selector */
 select{
